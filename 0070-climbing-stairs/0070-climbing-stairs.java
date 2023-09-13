@@ -6,7 +6,8 @@ class Solution {
         return n;
         ways[1] =1;
         ways[2] =2;
-
+        ways[0] =0;
+        
         for(int i=3;i <=n; i++){
             ways[i] = ways[i-1] + ways[i-2];
 
